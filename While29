@@ -1,1 +1,23 @@
+#include<math.h>
+#include<iostream>
+using namespace std;
 
+int
+main ()
+{
+  int k;
+  float ak,e,ak1=1.0,ak2=2.0;
+  cout << "Enter E: ";
+  cin >> e;
+  k=2;
+  ak=2.0;
+  while (fabs(ak-ak1)>=e)  
+  {
+        ak2 =ak1;
+        ak1 = ak;
+        k++;
+        ak=(ak2+2*ak1)/3;
+    }
+   cout <<"\nChislo K: "<< k <<"\nChislo A(K-1): " << ak1 << "\nChislo A(k): " << ak;
+   return 0;
+}
