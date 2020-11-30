@@ -1,1 +1,19 @@
+#include<math.h>
+#include<iostream>
+using namespace std;
+
+int
+main ()
+{
+  double x, p;
+  cout << "Enter X: ";
+  p=1.0;
+  for(int i= 1; i <= 10 ; i++)
+   {
+    cin >>x;
+    p*=x;
+   }
+   cout <<"\nProizvedeniye: "<< p;
+   return 0;
+}
 
