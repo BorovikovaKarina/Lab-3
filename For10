@@ -1,0 +1,19 @@
+
+#include<iostream>
+using namespace std;
+
+int
+main ()
+{
+  int n, i;
+  float sum;
+  sum=0;
+  cout << "Enter N: ";
+  cin >> n;
+   for(int i= 1; i <= n ; i++)
+   {
+    sum+=1.0/i;
+   }
+   cout << "\nSumma: " << sum;
+   return 0;
+}
